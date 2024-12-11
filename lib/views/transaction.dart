@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:money_management/model/transactionmodel.dart';
@@ -41,12 +41,12 @@ class Transaction extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
+                            backgroundColor: Colors.cyan.shade800,
+                            radius: 50,
                             child: Text(
                               parsedate(newlist[index].date),
                               textAlign: TextAlign.center,
                             ),
-                            backgroundColor: Colors.cyan.shade800,
-                            radius: 50,
                           ),
                           Text(
                             newlist[index].purpose,

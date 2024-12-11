@@ -1,6 +1,5 @@
 import 'package:hive/hive.dart';
- part 'categorymodel.g.dart';
-
+part 'categorymodel.g.dart';
 
 @HiveType(typeId: 2)
 enum Category {

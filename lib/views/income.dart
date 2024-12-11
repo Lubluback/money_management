@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:money_management/model/categorymodel.dart';
+
 import 'package:money_management/model/transactionmodel.dart';
 import 'package:money_management/services/categorydb.dart';
 import 'package:money_management/services/transactiondb.dart';
@@ -26,7 +26,7 @@ class Income extends StatelessWidget {
                           Categorydb.instance.refreshUi();
                           //   Categorydb().deleteCategory(category.id);
                         },
-                        icon: Icon(Icons.delete)),
+                        icon: const Icon(Icons.delete)),
                   ),
                 );
               });
